@@ -1,4 +1,5 @@
 import 'package:apicall/actions/ActionHome.dart';
+import 'package:apicall/actions/ActionPostUser.dart';
 import 'package:apicall/pages/SecondPage.dart';
 import 'package:flutter/material.dart';
 
@@ -19,14 +20,21 @@ class _HomeState extends State<Home> {
       ),
       body: ListView(
         children: [
-          // ElevatedButton(
-          //     onPressed: () async {
-          //       final temp = await ActionHome.fetchUser();
-          //       setState(() {
-          //         dataFromApi = temp;
-          //       });
-          //     },
-          //     child: Text("GET USER")),
+          ElevatedButton(
+              onPressed: () async {
+                final res = await ActionPostUser.postUserData(payload: {
+                  "id": "10",
+                  "name": "Donnukrit",
+                  "profileImg": "google.com"
+                });
+                print(res.toString());
+              },
+              child: Text("POST USER")),
+          ElevatedButton(
+              onPressed: () async {
+                await ActionHome.getUser();
+              },
+              child: Text("GET USER")),
           ElevatedButton(
               onPressed: () {
                 ActionHome.getOrder();
@@ -46,3 +54,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+// https://stackoverflow.com/questions/56201074/how-to-encode-and-decode-base64-and-base64url-in-flutter-dart
