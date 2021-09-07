@@ -1,7 +1,7 @@
-import 'package:apicall/pages/Home.dart';
 import 'package:flutter/material.dart';
+import 'pages/Home.dart';
 
-void main() {
+main() {
   runApp(App());
 }
 

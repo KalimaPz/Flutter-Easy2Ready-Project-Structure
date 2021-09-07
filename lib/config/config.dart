@@ -1,6 +1,9 @@
 class Config {
-  static String baseUrl = "https://jsonplaceholder.typicode.com/users";
-  static String backEnd = "http://localhost:3000";
+  static String serv = "dev"; // dev or prod
+  static String baseUrl = "https://$serv-jsonplaceholder.typicode.com/users";
+  static String getUrl() {
+    return baseUrl;
+  }
 }
 
 
