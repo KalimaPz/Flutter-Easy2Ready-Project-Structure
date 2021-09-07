@@ -1,16 +1,26 @@
-# apicall
-
-A new Flutter project.
-
+# Flutter Easy Project Structure
+Including Provider Statemanagement and HTTP
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+# Explain Structure
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## actions
+static method for each page
+## components
+widgets which you need to reuse it or ur custom widget
+## config
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- config/config.dart
+api or key or url
+- config/state_data.dart
+temporary date such as access token
+- config/style.dart
+a style of global widget
+## models
+model of data from api
+## pages
+pages including section folder for each page
+## store
+store a provider (state management)
