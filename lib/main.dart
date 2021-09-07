@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_boiler_plate/store/counter_provider.dart';
+
+import 'package:provider/provider.dart';
 import 'pages/Home.dart';
 
 main() {
@@ -10,8 +13,17 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Home(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => CounterProvider(),
+        )
+      ],
+      builder: (context, child) {
+        return MaterialApp(
+          home: Home(),
+        );
+      },
     );
   }
 }

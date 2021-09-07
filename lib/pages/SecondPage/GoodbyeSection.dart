@@ -6,7 +6,8 @@ class GoodbyeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: null,
+      color : Colors.blueAccent,
+      child: Text("Good Bye!!"),
     );
   }
 }

@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+
 class MyCustomTopicHeader extends StatelessWidget {
-  const MyCustomTopicHeader({Key key}) : super(key: key);
+  final String title;
+  const MyCustomTopicHeader({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: null,
+      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.blueAccent,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Text(title),
     );
   }
 }

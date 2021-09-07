@@ -6,7 +6,8 @@ class GreetingSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: null,
+      color: Colors.blue[100],
+      child: Text("Greeting!!"),
     );
   }
 }

@@ -6,7 +6,8 @@ class MiddleSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: null,
+      color: Colors.green[100],
+      child: Text("Middle Section"),
     );
   }
 }
