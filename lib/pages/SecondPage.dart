@@ -5,6 +5,7 @@ import 'package:flutter_project_boiler_plate/pages/SecondPage/GoodbyeSection.dar
 import 'package:flutter_project_boiler_plate/pages/SecondPage/GreetingSection.dart';
 
 class SecondPage extends StatelessWidget {
+  static String routeName = "/second";
   const SecondPage({Key key}) : super(key: key);
 
   @override

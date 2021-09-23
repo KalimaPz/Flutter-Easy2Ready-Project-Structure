@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_boiler_plate/route_map.dart';
 import 'package:flutter_project_boiler_plate/store/counter_provider.dart';
 
 import 'package:provider/provider.dart';
@@ -21,6 +22,7 @@ class App extends StatelessWidget {
       ],
       builder: (context, child) {
         return MaterialApp(
+          routes: Routes.pages,
           home: Home(),
         );
       },

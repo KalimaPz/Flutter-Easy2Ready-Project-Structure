@@ -9,6 +9,7 @@ import 'package:flutter_project_boiler_plate/store/counter_provider.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {
+  static String routeName = "/home";
   Home({Key key}) : super(key: key);
 
   @override
